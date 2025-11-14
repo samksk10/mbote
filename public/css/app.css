@@ -1,0 +1,77 @@
+/* Simple styles pour le formulaire */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.login-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 90%;
+    /* responsive sur mobile */
+    max-width: 400px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* fait en sorte que le padding et la bordure soient inclus dans la largeur de 100%,
+        au lieu de s'ajouter à l' extérieur. */
+}
+
+button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background: #1f6feb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error {
+    color: #c53030;
+    font-size: 0.9em;
+    margin-top: 6px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.form-row a {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 18px;
+    font-size: 0.85em;
+    color: #666;
+    text-align: center;
+}
