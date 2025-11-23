@@ -17,7 +17,7 @@
             <div class="status">{{ session('status') }}</div>
         @endif
 
-        <form id="loginForm" action="{{ url('/dashboard') }}" method="POST">
+        <form id="loginForm" action="{{ route('login') }}" method="POST">
             @csrf
             <label for="email">Adresse e-mail</label>
             <input id="email" name="email" type="email" placeholder="Adresse e-mail" value="{{ old('email') }}" required>
